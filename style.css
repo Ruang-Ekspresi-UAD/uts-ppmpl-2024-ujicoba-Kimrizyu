@@ -1,39 +1,23 @@
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
 body {
-    background-color: rgba(33, 221, 90, 0.603);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+/* Style for Dark Mode Toggle Button */
+#theme-toggle {
+    padding: 10px 20px;
     margin: 20px;
-}
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 50%;
-}
-/* Existing styles... */
-
-/* Responsive Layout */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    img {
-        width: 150px;
-    }
-
-    body {
-        margin: 10px;
-    }
-}
-footer {
-   
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    cursor: pointer;
 }
